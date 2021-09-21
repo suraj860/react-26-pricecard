@@ -1,0 +1,159 @@
+
+body{
+    margin: 0;
+    background-color: #629ef8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parentDiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 30px;  
+}
+
+/* card css */
+
+.card{
+    padding: 10px  30px;
+    background-color: white;
+    border-radius: 2rem;
+    transition: all 0.2s ;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* card head css */
+
+.card-head{
+    text-align: center;
+}
+
+.title{
+    margin: 0.5rem 0 0.8rem 0;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+    color: rgb(189, 189, 189);
+}
+.card-body{
+    padding-right: 120px;
+}
+
+.month{
+    margin: 0.5rem 0;
+    letter-spacing: .1rem;
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+/* all below css is for content part i.e for card-body */
+
+hr{
+    margin: 1.5rem 0;
+    border-bottom-width: 0;
+}
+
+span{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+ul{
+    padding-left: 0;
+    width: 220px;
+    /* margin-right: 100px; */
+}
+
+li{
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i{
+    margin-right: 12px;
+}
+
+.text-muted, .aa{
+    opacity: 0.4;
+}
+
+.one-muted{
+    opacity: 1;
+}
+
+.unmuted{
+    opacity: 1;
+}
+
+/* button css */
+
+.btn{
+    width: 100%;
+    padding: 12px ;
+    border-radius: 2rem;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1px;
+    font-weight: bolder;
+    opacity: 0.7;
+}
+
+/* hover effect */
+
+.card:hover .btn{
+    opacity: 1;
+    cursor: pointer;
+}
+
+strong{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* necessary media queries */
+
+@media(max-width:1220px){
+    .parentDiv{
+        grid-template-columns: repeat(2 , 1fr);
+        margin-bottom: 15px;
+    }
+
+    .card{
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:845px){
+    .parentDiv{
+        grid-template-columns: repeat(1 , 1fr);
+        margin-bottom: 15px;
+    }
+
+    .card{
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:450px){
+    .card{
+        width: 250px;
+    }
+    .parentDiv{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media(max-width:310px){
+    .card{
+        border-radius: 0;
+    }
+}
